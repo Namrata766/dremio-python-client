@@ -1,0 +1,13 @@
+###### Requirements without version specifiers ######
+pandas
+
+###### Requirements with version specifiers ######
+pyarrow==3.0.0
+
+
+###### Run this script as
+python3 ArrowFlightConnector.py --hostname "<dremio hostname>" --flightport 32010 
+--username "<dremio user>" --password "<dremio password>" --sqlquery 
+"SELECT * FROM space.poc.virtual_data_set fetch first 10 rows only" --tls 
+
+###### Keep the .pem certificate in the project path and pass the path as a paramater to the py script
